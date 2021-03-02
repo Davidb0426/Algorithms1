@@ -1,0 +1,23 @@
+//Given a valid (IPv4) IP address, return a defanged version of that IP address.
+//A defanged IP address replaces every period "." with "[.]".
+public class SolveChar {
+	public static void main(String[] args) {
+
+		System.out.println(changeChar());;	
+	}
+
+class Solution {
+    public String changeChar() {
+        String current = "a.b.c.d.e";
+        StringBuilder sb = new StringBuilder();
+			
+			for (char ch : current.toCharArray()) {
+				if(ch=='.') {
+					sb.append('[').append(ch).append(']');
+				} else {
+					sb.append(ch);
+				}
+			}
+			return sb.toString();
+    }
+}
