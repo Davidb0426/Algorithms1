@@ -1,0 +1,21 @@
+package jALtcde;
+public class 2DIntArray {
+	public static void main(String[] args) {
+		int[][]arr3 = {{110,725},{735,200}};
+
+		System.out.println(maximum(arr3));
+	}
+	
+	public static int maximum(int[][]accounts) {
+		int[][]arr2 = {{100,25},{75,200}};
+		int max = 0;
+		for(int []temp : arr2) {
+			int sum=0;
+			for(int i: temp) {
+				sum = sum + i;
+			}
+			max=Math.max(max, sum);
+		}
+		return max;
+	}
+}
