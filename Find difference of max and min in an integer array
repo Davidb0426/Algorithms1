@@ -1,0 +1,16 @@
+public int bigDiff(int[] nums) {
+  
+	int temp;
+		int box;
+
+	if(nums.length>1) {
+		for(int i=0; i<nums.length; i++) {
+		int min=	Math.min(nums[i], nums[i+1]);
+		int max=	Math.max(nums[i], nums[i+1]);
+		int diff=max-min;
+
+return diff;
+		}
+	}return 0;
+}
+  
