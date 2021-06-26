@@ -1,0 +1,9 @@
+boolean doubleX(String str) {
+String doubleX = "axaxax";
+
+  int o =str.indexOf("x");
+  if(o==-1) return false;
+  
+  String s2 = str.substring(o);
+  return s2.startsWith("xx");
+}
