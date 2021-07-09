@@ -1,0 +1,20 @@
+package jAvaBasics;
+
+public class NoTripleIntArr {
+
+	public static void main(String[] args) {
+		int arr[] = {3,3,4,4,5,5,6,7,4};
+		
+		System.out.println(noTriples(arr));
+
+	}
+	public static boolean noTriples(int[] nums) {
+		    for(int i=0; i<nums.length-2; i++){
+		    if(nums[i]==nums[i+1] && nums[i+2]==nums[i+1]){
+		      return false;
+		    }
+		  }return true;
+		  
+		  
+		}
+}
