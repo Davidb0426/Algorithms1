@@ -1,0 +1,16 @@
+public class RandString {
+
+	public static void main(String[] args) {
+		String s1 = "Come";
+		System.out.println(randString(s1));
+
+	}
+	public static String randString(String str) {
+		  String temp="";
+		  for(int i=0; i<str.length(); i++){
+		    temp+=str.substring(0,i+1);
+		  }
+		  return temp;
+
+		}
+}
