@@ -1,0 +1,21 @@
+public class IncludeCertainStringSubstrings {
+
+	public static void main(String[] args) {
+		String rest = "Relentless";
+		System.out.println(smallStr(rest));
+
+	}
+	public static String smallStr(String str) {
+		String result ="";
+		  for(int i=0; i<str.length(); i+=4){
+		    int en= i+2;
+		   if(en>str.length()){
+		     en =str.length();
+		   }
+		 result += str.substring(i,en);  
+		   
+		  }
+		  return result;
+		}
+
+}
