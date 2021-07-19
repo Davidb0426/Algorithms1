@@ -1,0 +1,24 @@
+package algorithmsCodingBat;
+public class IntArraySum {
+	public static void main(String[] args) {
+		int arr[]= {1,2,3,4,5,13,14};
+		System.out.println(sumin(arr));
+	}
+	public static int sumin(int[] nums) {
+		  int sum=0;
+		  int count=0;
+		  for(int i=0; i<nums.length-1; i++){
+		     sum+=nums[i];
+		     if(nums.length<1){
+		       return 0;
+		     } 
+		    if(nums[i]==13){
+		    count= nums[0]+nums[i] + nums[i+2];
+		    }
+		    return count;
+		  }
+
+		      return sum; 
+		}
+}    
+	
