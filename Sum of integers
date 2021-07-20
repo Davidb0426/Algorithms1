@@ -1,0 +1,15 @@
+
+public class SumLog {
+
+	public static void main(String[] args) {
+		int a=5;
+		int b=77;
+		System.out.println(soSum(a,b));
+	}
+	public static int soSum(int a, int b) {
+		  if((a+b)>=10 && (a+b)<=19){
+		    return 20;
+		  } return a+b;
+		}
+
+}
