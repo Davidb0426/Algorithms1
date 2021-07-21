@@ -1,0 +1,16 @@
+public class BoolLog {
+
+	public static void main(String[] args) {
+		int m=7;
+		System.out.println(spEl(m));
+
+	}
+	public static boolean spEl(int n) {
+		  if(n%11==0){
+		    return true;
+		  } if(n%11==1){
+		    return true;
+		  }return false;
+		}
+
+}
