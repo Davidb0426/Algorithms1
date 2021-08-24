@@ -1,0 +1,15 @@
+	public static void main(String[] args) {
+		Map<String, String> map2 = new HashMap<"a", "store">();
+		System.out.println(mapBully("a"));
+
+	}
+	public Map<String, String> mapBully(Map<String, String> map1) {
+		Map<String, String> map = new HashMap<String, String>();
+		  if(map.containsKey("a")){
+		    map.put("b", map.get("a"));
+		    map.put("a","");
+		  }
+		  return map;
+		}
+
+}
