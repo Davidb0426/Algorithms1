@@ -1,0 +1,20 @@
+
+public class FrontLen {
+
+	public static void main(String[] args) {
+		String st ="hey";
+		int n=7;
+		System.out.println(checkLen(st,n));
+	}
+	public static String checkLen(String str, int n) {
+		int frontLen =3;
+		if(frontLen>3) {
+			frontLen=str.length();
+		} 
+		String result="";
+		String front = str.substring(0, frontLen);
+		for(int i=0; i<n; i++) {
+			result+=front;
+		}return result;
+	}
+}
