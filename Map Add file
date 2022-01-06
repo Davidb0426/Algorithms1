@@ -1,0 +1,18 @@
+public class Java {
+	
+	public static void main(String[] args) {
+	Map ma = new HashMap();
+	ma.put("a", "storage");
+	ma.put("b", "system");
+	
+		System.out.println(ma);
+		System.out.println(mapShare(ma));
+	}
+	
+	public static Map<String, String> mapShare(Map<String, String> map){
+			if(map.containsKey("a")) {
+			map.put("b", map.get("a"));
+		}return map;
+	}
+	
+}
