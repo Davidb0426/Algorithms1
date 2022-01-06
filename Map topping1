@@ -1,0 +1,19 @@
+public class Java {
+	
+	public static void main(String[] args) {
+	Map map = new HashMap();
+	  map.put("bread", "butter");
+	  if(map.containsKey("ice cream")){
+	    map.put("ice cream", "cherry");
+	  }
+		System.out.println(map);
+		System.out.println(mapShare(map));
+	}
+	
+	public static Map<String, String> mapShare(Map<String, String> map){
+			if(map.containsKey("a")) {
+			map.put("b", map.get("a"));
+		}return map;
+	}
+	
+}
