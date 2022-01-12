@@ -1,0 +1,31 @@
+public class MaxMinArrayInteger {
+
+	public static void main(String[] args) {
+		int ar[] = {10,77,2,3,4,6,100};
+	System.out.println(findMax(ar));
+	System.out.println(findMin(ar));
+	
+	
+	int max = IntStream.of(ar).max().orElse(Integer.MIN_VALUE);
+	int min = IntStream.of(ar).min().orElse(Integer.MAX_VALUE);
+	System.out.println(max-min);
+	}
+	
+	public static int findMax(int[]arr) {
+		int max = arr[0];
+		for(int i=1; i<arr.length; i++) {
+			if(arr[i]>max) {
+				max = arr[i];
+			}
+		}return max;
+	}
+	
+	public static int findMin(int[]arr) {
+		int min = arr[0];
+		for(int i=1; i<arr.length; i++) {
+			if(arr[i]<min) {
+				min = arr[i];
+			}
+		}return min;
+	}
+}
